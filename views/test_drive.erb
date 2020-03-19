@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  
+
+  <head>
+    <title> 🚀 Make it your home | Spacebnb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <script type="text/javascript" src="/warpspeed.min.js"></script>
+  </head>
+
+  <body>
+  <div style ="position:fixed; z-index:0; top:0; left:0; width:100%; height:100%;">
+      <canvas id="canvas" style="width:100%; height:100%;"></canvas>
+      <script>var x=new WarpSpeed("canvas",{"speed":1,"speedAdjFactor":0.03,"density":0.7,"shape":"circle","warpEffect":true,"warpEffectLength":5,"depthFade":true,"starSize":3,"backgroundColor":"hsl(263,45%,7%)","starColor":"#FFFFFF"});</script>
+    </div>
+
+    <div style ="position:absolute; top:45%; left:32%; z-index:3;">
+      <img src ="/millennium_falcon.png" width = 50% height = 50%>
+    </div>
+
+    
+    <div id= "space_foreground" >
+      <video autoplay muted loop id="space_vid" >
+        <source src="/space_vid.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    
+    <div style ="position:fixed; z-index:2; top:0; left:0; width:100%; height:100%;">
+      
+
+    <div style ="position:absolute; bottom:5%; left:43%; z-index:3;">
+      <button id="warp" class="button" type="button">ACTIVATE WARP DRIVE</button>
+    </div>
+
+   
+      
+    <script>
+    $(document).ready(function() { 
+      let root = document.documentElement;
+      $('#warp').click(function() { 
+        root.style.setProperty('--space_opacity', '0');
+        var x=new WarpSpeed("canvas",{"speed":15,"speedAdjFactor":0.03,"density":0.7,"shape":"circle","warpEffect":true,"warpEffectLength":5,"depthFade":true,"starSize":3,"backgroundColor":"hsl(263,45%,7%)","starColor":"#FFFFFF"});
+        document.getElementById('warp').style.visibility = 'hidden';
+        setTimeout(function() {
+
+          root.style.setProperty('--space_opacity', '95');
+          document.getElementById('warp').style.visibility = 'visible';
+          // $("space_foreground").html('<video autoplay muted loop id="space_vid" ><source src="/space_vid_2.mp4" type="video/mp4"></video>');
+         
+        }, 3000);
+      
+      
+      })
+    })
+    </script>
+
+      
+    </div>
+  </body>
+</html>

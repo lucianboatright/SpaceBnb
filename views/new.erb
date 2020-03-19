@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> 🚀 Make it your home | Spacebnb</title>
+    <link href="<%= url('style.css') %>" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/warpspeed.min.js"></script>
+  </head>
+
+  <body>
+    <div style ="position:fixed; z-index:0; top:0; left:0; width:100%; height:100%;">
+      <canvas id="canvas" style="width:100%; height:100%;"></canvas>
+      <script>var x=new WarpSpeed("canvas",{"speed":1,"speedAdjFactor":0.03,"density":0.7,"shape":"circle","warpEffect":true,"warpEffectLength":5,"depthFade":true,"starSize":3,"backgroundColor":"hsl(263,45%,7%)","starColor":"#FFFFFF"});</script>
+    </div>
+
+<head>
+  <title> 🚀 Make it your home | Spacebnb</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+  <script type="text/javascript" src="/warpspeed.min.js"></script>
+</head>
+
+<body>
+
+  <div style ="position:fixed; z-index:0; top:0; left:0; width:100%; height:100%;">
+    <canvas id="canvas" style="width:100%; height:100%;"></canvas>
+    <script>var x=new WarpSpeed("canvas",{"speed":1,"speedAdjFactor":0.03,"density":0.7,"shape":"circle","warpEffect":true,"warpEffectLength":5,"depthFade":true,"starSize":3,"backgroundColor":"hsl(263,45%,7%)","starColor":"#FFFFFF"});</script>
+  </div>
+
+  <div style ="position:fixed; z-index:1; top:0; left:0; width:100%; height:100%;">
+
+    <div class="moon">🌒
+    </div>
+    <div class="header">
+      spacebnb
+    </div>
+
+    <h2>Welcome to the Milky Way, <%= @user.first_name %> <%= @user.last_name %>.<h2>
+    <h2><a href='/spaces'> Ready for lift off? </a></h2>
+  </div>
+</body>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+
+html { 
+  font-family: 'Open Sans', sans-serif; 
+ 
+}
+
+h1 { 
+  font-family: 'Open Sans', sans-serif; 
+  color: white;
+}
+
+#space_vid {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header {
+  position: absolute;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif; 
+  color: white;
+  top: 0%;
+  left: 2.5%;
+  padding: 1rem; 
+}
+
+.login {
+  position: absolute;
+  font-size: 10px;
+  top: 1.75%;
+  right: 10%;
+  padding: 0.5rem; 
+}
+
+.register {
+  position: absolute;
+  font-size: 10px;
+  top: 1.75%;
+  right: 2.5%;
+  padding: 0.5rem; 
+}
+
+
+.moon {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1.6em;
+  position: absolute;
+  top: 0.5%;
+  padding: 1rem; 
+  color: black;
+  text-shadow: 1px 1px 2px rgb(255, 244, 197), 0 0 25px  rgb(196, 184, 132), 0 0 5px rgb(151, 144, 109);
+}
+
+.a {
+  color: white;
+}
+
+.a:visited{
+  color: white;
+}
+
+h2 { 
+  font-family: 'Open Sans', sans-serif; 
+  color: white;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Bangers', sans-serif;
+}
+
+.p {
+  text-align: left;
+  font-size: 1.6em;
+  padding: 1em;
+  color: white;
+}
+
+.liftoff {
+  font-family: 'Open Sans', sans-serif; 
+  color: white;
+  position: fixed;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+  font-size: 15px;
+  display:  inline-block;
+  background-color:red;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:3em;
+  box-sizing: border-box;
+  text-decoration:  none;
+  font-weight:  600;
+  color:#FFFFFF;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align: center;
+  transition: all 0.2s;
+  outline:  none;
+}
+
+.button:hover{
+  border-color: rgba(255,255,255,1);
+}
+
+#log_in {
+  color: white;
+  text-align: center;
+  font-family: 'Bangers', sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.details {
+  color: white;
+  text-align: center;
+  font-family: 'Bangers', sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(241, 28, 46);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.spaces_link {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new_listing {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+:root {
+  --space_opacity: 0.95;
+}
+
+#space_foreground {
+opacity: var(--space_opacity);
+}
